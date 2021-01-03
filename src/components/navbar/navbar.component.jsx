@@ -27,7 +27,7 @@ class Navbar extends Component {
                 <ul className = {this.state.clicked ? "nav-menu active" : "nav-menu"}>
                 {
                     this.state.options.map(
-                        (option, idx) => <li key = {idx}><a className = "gallery-option active" href = {option.linkUrl}>{option.title}</a></li>
+                        (option, idx) => <li key = {idx}><a className = "gallery-option" href = {option.linkUrl}>{option.title}</a></li>
                     )
                 }
                 </ul>
