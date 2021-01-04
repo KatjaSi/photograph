@@ -6,7 +6,6 @@ import HomePage from './pages/homepage/homepage.component';
 import './pages/homepage/homepage.styles.scss';
 
 import CategoryPage from './components/category-page/category-page.component';
-import Header from './components/header/header.component';
 import Navbar from './components/navbar/navbar.component';
 
 import Section_Data from './components/categories-menu/data';
@@ -16,7 +15,6 @@ function App() {
   console.log(options);
   return (
     <div>
-      <Navbar/>
         <Switch>
           <Route exact path = '/' component = {HomePage}/>
           <Route exact path = '/:title' component = {CategoryPage}/>
