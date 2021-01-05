@@ -10,12 +10,17 @@ class Navbar extends Component {
         this.state = {
             active: activeTitle,
             clicked: false,
-            options: Section_Data.map((item) => ({title: item.title, linkUrl: item.linkUrl}) )
+            options: Section_Data.map((item) => ({title: item.title, linkUrl: item.linkUrl}) ),
+            activeGallery: false
         }
     }
 
     handleClick =() => {
         this.setState({clicked: !this.state.clicked})
+    }
+
+    handleGalleryClick = () => {
+        this.setState({activeGallery: !this.state.activeGallery})
     }
 
     render() {
@@ -27,12 +32,19 @@ class Navbar extends Component {
                     <i className = {this.state.clicked ? 'fas fa-times':'fas fa-bars '}></i>
                 </div>
                 <ul className = {this.state.clicked ? "nav-menu active" : "nav-menu"}>
-                {
-                    this.state.options.map(
+                <div className = "dropdown">
+                    <button className = "dropbtn option" onClick = {this.handleGalleryClick }>Gallery&nbsp;
+                        <i className={this.state.activeGallery ? "fa fa-minus fa-xs":"fa fa-plus fa-xs"}></i>
+                    </button>
+                    <div className = "dropdown-content" style = {this.state.activeGallery? {display: "block"}:{display:"none"}}>
+                        {
+                        this.state.options.map(
                         (option, idx) => <li key = {idx}  >
                             <a className = {this.state.active === option.linkUrl? 'option active':'option '}  href = {option.linkUrl}>{option.title}</a></li>
-                    )
-                }
+                        )
+                     }
+                    </div>
+                </div>
                 <li><a className = {this.state.active === "book" ? "option info active":"option info"} href = "book">Book</a></li>
                 <li><a className ={this.state.active === "omMeg" ? "option info active":"option info"} href = "omMeg">Om meg</a></li>
                 <li><a className ={this.state.active === "contacts" ? "option info active":"option info"} href = "contacts">Contacts</a></li>
