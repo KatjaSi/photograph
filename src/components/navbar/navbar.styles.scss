@@ -39,8 +39,12 @@
 
             .active {
                 color: white;
-            }
+            } 
 
+        }
+
+        .dropdown-content {
+            transition: all 0.5s ease;
         }
 
         .dropdown-content .option {
@@ -146,6 +150,8 @@
             left: 0;
             box-shadow: none;
             z-index: 1;
+
+            
           }
 
           .dropdown-content:last-child {

@@ -7,6 +7,9 @@ import './pages/homepage/homepage.styles.scss';
 
 import CategoryPage from './components/category-page/category-page.component';
 import Prices from './pages/prices/prices.component';
+import BookPage from './pages/bookpage/bookpage.component';
+import ContactsPage from './pages/contactspage/contactspage.component';
+import OmMegPage from './pages/ommegpage/ommegpage.component';
 
 import Section_Data from './components/categories-menu/data';
 
@@ -18,6 +21,9 @@ function App() {
         <Switch>
           <Route exact path = '/' component = {HomePage}/>
           <Route exact path = '/prices' component = {Prices}/>
+          <Route exact path = '/book' component = {BookPage}/>
+          <Route exact path = '/ommeg' component = {OmMegPage}/>
+          <Route exact path = '/contacts' component = {ContactsPage}/>
           <Route exact path = '/:title' component = {CategoryPage}/>
         </Switch>
     </div>
