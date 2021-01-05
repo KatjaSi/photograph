@@ -5,9 +5,7 @@
     color: #444;
 }
 
-.active {
-    color: white;
-}
+
 
 .navbar-items {
     height: 60px;
@@ -39,6 +37,10 @@
                 @include font-style-nav();
             }
 
+            .active {
+                color: white;
+            }
+
         }
 
         .dropdown-content .option {
@@ -49,9 +51,14 @@
             color: white;
         }
 
+        .dropdown-content .active {
+            color: white;
+        }
+
         .active {
             color: white;
         }
+        
     }
 
     .menu-icon {
@@ -120,7 +127,7 @@
             flex-direction: column;
             justify-content: space-between;
             width: 90%;
-            height: 250px;
+            height: 320px;
             position: absolute;
             top: 75px;
             left: -100%;
@@ -162,6 +169,7 @@
             opacity: 1;
             transition: all 0.5s ease;
             z-index: 1;
+            
         }
 
         .option {

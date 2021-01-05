@@ -9,7 +9,7 @@ import Navbar from '../navbar/navbar.component';
 const CategoryPage = props => {
     return (
         <div>
-            <Navbar activeTitle = {props.match.params.title}/>
+            <Navbar activeTitle = {props.match.params.title} isGallery = {true}/>
             <div className = "gallery">
                 <ResponsiveMasonry
                     columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3,1200:4}}>
