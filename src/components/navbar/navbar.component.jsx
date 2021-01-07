@@ -54,6 +54,7 @@ class Navbar extends Component {
                 <li><a className = {this.state.active === "prices" ? "option info active":"option info"} href = "prices">Prices</a></li>
                 <li><a className ={this.state.active === "omMeg" ? "option info active":"option info"} href = "omMeg">Om meg</a></li>
                 <li><a className ={this.state.active === "contacts" ? "option info active":"option info"} href = "contacts">Contacts</a></li>
+                <li><a className ={this.state.active === "signin" ? "option info active":"option info"} href = "signin">Sign In</a></li>
                 </ul>
             </nav>
         )

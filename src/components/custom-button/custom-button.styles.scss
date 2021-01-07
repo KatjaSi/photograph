@@ -1,0 +1,26 @@
+$button-color: #88389a;
+
+.custom-button {
+    min-width: 265px;
+   // width: auto;
+    width: auto;
+    height: 50px;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    padding: 0 35px 0 35px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: $button-color;
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 8px 8px 8px rgba(126, 79, 139, 0.5);
+    border-radius: 20px;
+  
+    &:hover {
+      background-color: white;
+      color: $button-color;
+      border: 1px solid $button-color;
+    }
+  }
+  

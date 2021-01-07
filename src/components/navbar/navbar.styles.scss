@@ -5,7 +5,7 @@
     color: #444;
 }
 
-
+$active-color: #7e4f8b;
 
 .navbar-items {
     height: 60px;
@@ -32,35 +32,33 @@
         }
 
         .dropdown {
-            margin-top: -2px;
+            margin-top: -1px;
             .dropbtn {
                 @include font-style-nav();
             }
 
             .active {
-                color: white;
+                color: $active-color;
             } 
 
         }
 
-        .dropdown-content {
-            transition: all 0.5s ease;
-        }
+        
 
         .dropdown-content .option {
             @include font-style-nav();
         }
 
         .option:hover {
-            color: white;
+            color: $active-color;
         }
 
         .dropdown-content .active {
-            color: white;
+            color: $active-color;
         }
 
         .active {
-            color: white;
+            color: $active-color;
         }
         
     }
@@ -95,7 +93,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #bfbfbf;
+    background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -131,7 +129,7 @@
             flex-direction: column;
             justify-content: space-between;
             width: 90%;
-            height: 320px;
+            height: 360px;
             position: absolute;
             top: 75px;
             left: -100%;
@@ -145,7 +143,7 @@
         .dropdown-content {
             display: none;
             position: absolute;
-            background-color: #bfbfbf;
+            background-color: white;
             width: 100%;
             left: 0;
             box-shadow: none;
@@ -170,7 +168,7 @@
 
 
         .nav-menu.active {
-            background-color: #bfbfbf;
+            background-color: white;
             left: 0;
             opacity: 1;
             transition: all 0.5s ease;
@@ -195,6 +193,8 @@
             transform: translate(25%, 50%);
             top: 10px;
         }
+
+       
 
         .menu-icon {
             display: block;

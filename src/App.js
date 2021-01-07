@@ -10,6 +10,7 @@ import Prices from './pages/prices/prices.component';
 import BookPage from './pages/bookpage/bookpage.component';
 import ContactsPage from './pages/contactspage/contactspage.component';
 import OmMegPage from './pages/ommegpage/ommegpage.component';
+import SignInAndSignOutPage from './pages/signinandsignout/signinandsignout.component';
 
 import Section_Data from './components/categories-menu/data';
 
@@ -23,6 +24,7 @@ function App() {
           <Route exact path = '/prices' component = {Prices}/>
           <Route exact path = '/book' component = {BookPage}/>
           <Route exact path = '/ommeg' component = {OmMegPage}/>
+          <Route exact path = '/signin' component = {SignInAndSignOutPage}/>
           <Route exact path = '/contacts' component = {ContactsPage}/>
           <Route exact path = '/:title' component = {CategoryPage}/>
         </Switch>

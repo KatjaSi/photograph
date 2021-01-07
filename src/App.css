@@ -1,5 +1,9 @@
 body {
     padding-top: 20px;
+    background-color: #fefefe;
+    color: #444;
+    font-family: 'Montserrat', sans-serif;
+    
 }
 
 a {
